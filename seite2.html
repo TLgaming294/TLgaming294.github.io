@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <title>Kratzi Worts</title>
+  </head>
+  <body id="körper">
+    <div class="playerSelect">
+
+    <button type="button" name="button" onclick="storagetest()">testlocal</button>
+    <input id="storagetestout"type="text" name="" value="">
+  <button type="button" name="button" onclick="sync()">testread</button>
+
+<script type="text/javascript" src="fragen.js"></script>
+
+    <script type="text/javascript" type="text/">
+
+
+
+function storagetest() {
+document.getElementById("storagetestout").value = localStorage.getItem("Storage");
+}
+
+
+function sync() {
+    let y = 0;
+    let x = Math.floor(Math.random() * 3);
+
+    for (let ir = 0; ir < 100; ir++) {
+      if (fragen[x] == undefined) {
+        x = Math.floor(Math.random() * fragen.length);
+      }
+      else {
+    document.getElementById("storagetestout").value = fragen[x];
+    break;
+  }
+}
+
+    fragen.splice(x,1);
+}
+
+
+    </script>
+    </div>
+  </body>
+</html>
