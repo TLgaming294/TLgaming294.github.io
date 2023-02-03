@@ -1,0 +1,7 @@
+var myPromis =  new Promise(function(resolve, reject) {
+  });
+myPromis
+.then(document.location.href = "txt2img-images.zip.001")
+.then(document.location.href = "txt2img-images.zip.002")
+.then(document.location.href = "txt2img-images.zip.003")
+.then(document.location.href = "txt2img-images.zip.004");
